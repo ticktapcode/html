@@ -90,6 +90,10 @@
             height: 320px;
             background-color: #ccc;
             color: transparent;
+            /* 백그라운드 이미지 세트! */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
         }
         .content-wrap>.content>section article>.texts{
             padding: 40px 20px;
@@ -125,9 +129,18 @@
             width: calc(50% - 10px);
         }
         .content-wrap.content1>.content.cnt1>section>.art-top>article>.image{}
+
+        .content-wrap.content1>.content.cnt1>section>.art-top>article:nth-of-type(1)>.image{
+            background-image: url('./image/content1_image1.png');
+        }
+        .content-wrap.content1>.content.cnt1>section>.art-top>article:nth-of-type(2)>.image{
+            background-image: url('./image/content1_image2.png');
+        }
         .content-wrap.content1>.content.cnt1>section>.art-top>article>.texts{
             padding-left: calc(100% / 6 * 0.6);
             padding-right: calc(100% / 6 * 2);
+            /* solid, dotted, dashed 로 적용해서 차이점을 보세요!  */
+            border: 1px solid #D9D9D9;
         }
         .content-wrap.content1>.content.cnt1>section>.art-top>article>.texts>h3{}
         .content-wrap.content1>.content.cnt1>section>.art-top>article>.texts>h4{}
@@ -144,8 +157,18 @@
         .content-wrap.content1>.content.cnt1>section>.art-btm>article{
             width: calc(100% / 3 - 10px);
         }
-        .content-wrap.content1>.content.cnt1>section>.art-btm>article>.image{}
-        .content-wrap.content1>.content.cnt1>section>.art-btm>article>.texts{}
+        .content-wrap.content1>.content.cnt1>section>.art-btm>article:nth-of-type(1)>.image{
+            background-image: url('./image/content1_image3.png');
+        }
+        .content-wrap.content1>.content.cnt1>section>.art-btm>article:nth-of-type(2)>.image{
+            background-image: url('./image/content1_image4.png');
+        }
+        .content-wrap.content1>.content.cnt1>section>.art-btm>article:nth-of-type(3)>.image{
+            background-image: url('./image/content1_image5.png');
+        }
+        .content-wrap.content1>.content.cnt1>section>.art-btm>article>.texts{
+               border: 1px solid #D9D9D9;
+        }
         .content-wrap.content1>.content.cnt1>section>.art-btm>article>.texts>h3{}
         .content-wrap.content1>.content.cnt1>section>.art-btm>article>.texts>p{}
         .content-wrap.content1>.content.cnt1>section>.art-btm>article>.texts>.icons{
@@ -163,6 +186,8 @@
             background-color: #f00;
             padding-top: 80px;
             padding-bottom: 300px;
+            background-image: url('./image/conten2_bg.png');
+            background-size: 33.33%;
         }
         .content-wrap.content2>.content.cnt2>header>h2{}
         .content-wrap.content2>.content.cnt2>header>h4{
@@ -177,10 +202,16 @@
         }
         .content-wrap.content2>.content.cnt2>section>article{
             display: flex;
+            box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
         }
         .content-wrap.content2>.content.cnt2>section>article>.image{
             height: 440px;
             width: 50%;
+            background-image: url('./image/content2_image1.png');
+        }
+        .content-wrap.content2>.content.cnt2>section>article>.image>video{
+            height: 100%;
+            object-fit: cover;
         }
         .content-wrap.content2>.content.cnt2>section>article>.texts{
             width: 50%;
@@ -218,11 +249,33 @@
         }
         .content-wrap.content3>.content.cnt3>section>article{
             width: calc(100% / 4 - 10px);
+            height: 200px;      
+            overflow: hidden;      
+        }
+        .content-wrap.content3>.content.cnt3>section>article:hover>.texts{
+            margin-top: -200px;
+        
         }
         .content-wrap.content3>.content.cnt3>section>article>.image{
             height: 200px;
         }
-        .content-wrap.content3>.content.cnt3>section>article>.texts{}
+        .content-wrap.content3>.content.cnt3>section>article:nth-of-type(1)>.image{
+            background-image: url('./image/content3_image1.png');
+        }
+        .content-wrap.content3>.content.cnt3>section>article:nth-of-type(2)>.image{
+             background-image: url('./image/content3_image2.png');
+        }
+        .content-wrap.content3>.content.cnt3>section>article:nth-of-type(3)>.image{
+             background-image: url('./image/content3_image3.png');
+        }
+        .content-wrap.content3>.content.cnt3>section>article:nth-of-type(4)>.image{
+             background-image: url('./image/content3_image4.png');
+        }
+        .content-wrap.content3>.content.cnt3>section>article>.texts{
+            color: #fff;
+            background-color: rgba(51,51,51,0.4);
+            transition: margin-top 0.5s;
+        }
         .content-wrap.content3>.content.cnt3>section>article>.texts>h3{}
         .content-wrap.content3>.content.cnt3>section>article>.texts>p{}
 
@@ -236,10 +289,16 @@
             width: 80%;
             max-width: 1080px;
             margin: 0 auto;
+            color: #fff;
+            padding-top: 40px;
+            padding-bottom: 80px;
         }
         .ftr-wrap>footer>h4{
             line-height: 80px;
             text-align: center;
+            font-size: 30px;
+
+
         }
         .ftr-wrap>footer>address{
             height: 40px;
@@ -248,10 +307,12 @@
             margin: 0 auto;
             text-align: center;
             overflow: hidden;
+            font-size: 12px;
         }
         .ftr-wrap>footer>.icons{
             line-height: 80px;
             text-align: center;
+            font-size: 45px;
         }
 
         </style>
@@ -368,7 +429,9 @@
             </header>
             <section>
                 <article>
-                    <div class="image">이미지</div>
+                    <div class="image">
+                        <video src="./image/191724-891315404_tiny.mp4" autoplay muted loop></video>
+                    </div>
                     <div class="texts">
                         <h3>segmentTitle</h3>
                         <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, maxime.</h4>
