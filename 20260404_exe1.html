@@ -6,6 +6,219 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>크리스마스 사이트</title>
     <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        /* hdr-top-wrap */
+        .hdr-top-wrap {}
+        .hdr-top-wrap>.hdr-top {
+            width: 80%;
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+
+        .hdr-top-wrap>.hdr-top>i {}
+
+        /* hdr-wrap */
+        .hdr-wrap {}
+
+        .hdr-wrap>header {
+            width: 80%;
+            max-width: 1080px;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        .hdr-wrap>header>h1 {}
+
+        .hdr-wrap>header>ul {
+            display: flex;
+        }
+
+        .hdr-wrap>header>ul>li {}
+
+        /* 콘텐츠 공통 */
+        .cnt-wrap{}
+
+        .cnt-wrap>.content {
+            width: 80%;
+            max-width: 1080px;
+            margin: 0 auto;
+            margin-top: 80px;
+        }
+
+        .cnt-wrap>.content>header {}
+
+        .cnt-wrap>.content>header>h2 {}
+
+        .cnt-wrap>.content>header>h4 {}
+
+        .cnt-wrap>.content>section {
+            margin-top: 40px;
+        }
+
+        .cnt-wrap>.content>section>article {}
+
+        .cnt-wrap>.content>section>article>.image {}
+
+        .cnt-wrap>.content>section>article>.texts {}
+
+        .cnt-wrap>.content>section>article>.texts>h3{}
+
+        .cnt-wrap>.content>section>article>.texts>h4 {}
+
+        .cnt-wrap>.content>section>article>.texts>p {}
+
+        .cnt-wrap>.content>section>article>.texts>.icons {}
+
+        .cnt-wrap>.content>section>article>.texts>.icons>i {}
+
+        /* cnt-wrap1 */
+        .cnt-wrap.cnt-wrap1 {}
+
+        .cnt-wrap.cnt-wrap1>.content.cnt1 {}
+
+        .cnt-wrap.cnt-wrap1>.content.cnt1>header {}
+
+        .cnt-wrap.cnt-wrap1>.content.cnt1>header>h2 {}
+
+        .cnt-wrap.cnt-wrap1>.content.cnt1>header>h4 {}
+
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section {}
+
+        /* art-top */
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top {
+            display: flex;
+        }
+
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article {}
+
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.image.i1 {}
+
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.image.i2 {}
+
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts {}
+
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>h3 {}
+
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>h4 {}
+
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>p {}
+
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>.icons {}
+
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>.icons>i {}
+
+        /* art-btm */
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm {
+            display: flex;
+            margin-top: 40px;
+        }
+
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article {}
+
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.image.i1 {}
+
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.image.i2 {}
+
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.image.i3 {}
+
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts {}
+
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts>h3 {}
+
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts>p {}
+
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts>.icons {}
+
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts>.icons>i {}
+
+        /* cnt-wrap2 */
+        .cnt-wrap.cnt-wrap2 {}
+
+        .cnt-wrap.cnt-wrap2>.content.cnt2 {}
+
+        .cnt-wrap.cnt-wrap2>.content.cnt2>header {
+            padding-top: 80px;
+            padding-bottom: 360px;
+            background-color: #f00;
+        }
+
+        .cnt-wrap.cnt-wrap2>.content.cnt2>header>h2 {}
+
+        .cnt-wrap.cnt-wrap2>.content.cnt2>header>h4 {}
+
+        .cnt-wrap.cnt-wrap2>.content.cnt2>section {
+            margin-top: -320px;
+        }
+
+        .cnt-wrap.cnt-wrap2>.content.cnt2>section>article {
+            display: flex;
+        }
+
+        .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.image {}
+
+        .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts {}
+
+        .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts>h3 {}
+
+        .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts>h4 {}
+
+        .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts>p {}
+
+        .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts>button {}
+
+        /* cnt-wrap3 */
+        .cnt-wrap.cnt-wrap3 {}
+
+        .cnt-wrap.cnt-wrap3>.content.cnt3 {}
+
+        .cnt-wrap.cnt-wrap3>.content.cnt3>header {}
+
+        .cnt-wrap.cnt-wrap3>.content.cnt3>header>h2 {}
+
+        .cnt-wrap.cnt-wrap3>.content.cnt3>header>h4 {}
+
+        .cnt-wrap.cnt-wrap3>.content.cnt3>section {
+            display: flex;
+        }
+
+        .cnt-wrap.cnt-wrap3>.content.cnt3>section>article {}
+
+        .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image.i1 {}
+
+        .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image.i2 {}
+
+        .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image.i3 {}
+
+        .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image.i4 {}
+
+        .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.texts {}
+
+        .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.texts>h3 {}
+
+        .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.texts>p {}
+
+        /* ftr-wrap */
+        .ftr-wrap {}
+
+        .ftr-wrap>footer {
+            width: 80%;
+            max-width: 1080px;
+            margin: 0 auto;
+            margin-top: 80px;
+            padding-top: 40px;
+            padding-bottom: 80px;
+            background-color: #f00;
+        }
+
+        .ftr-wrap>footer>h4 {}
+
+        .ftr-wrap>footer>address {}
+
+        .ftr-wrap>footer>.icons {}
+
+        .ftr-wrap>footer>.icons>i {}
+    </style>
 </head>
 
 <body>
@@ -62,7 +275,9 @@
                         <div class="image i1">이미지</div>
                         <div class="texts">
                             <h3>segment title</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita neque hic, ipsa minus eveniet soluta ad voluptas quidem! Debitis vero recusandae dignissimos suscipit nesciunt voluptas soluta vitae facere nobis quod?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita neque hic, ipsa minus
+                                eveniet soluta ad voluptas quidem! Debitis vero recusandae dignissimos suscipit nesciunt
+                                voluptas soluta vitae facere nobis quod?</p>
                             <div class="icons"><i></i><i></i></div>
                         </div>
                     </article>
@@ -70,7 +285,9 @@
                         <div class="image i2">이미지</div>
                         <div class="texts">
                             <h3>segment title</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dicta officia ea veritatis magni facilis tempore fugit voluptatem tempora amet repudiandae nesciunt, sunt provident molestias distinctio at, est, et doloribus!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dicta officia ea
+                                veritatis magni facilis tempore fugit voluptatem tempora amet repudiandae nesciunt, sunt
+                                provident molestias distinctio at, est, et doloribus!</p>
                             <div class="icons"><i></i><i></i></div>
                         </div>
                     </article>
@@ -78,7 +295,9 @@
                         <div class="image i3">이미지</div>
                         <div class="texts">
                             <h3>segment title</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quia corrupti neque officiis consequuntur ratione modi debitis, esse hic, sit officia aliquam nihil aperiam. Dolor autem quaerat illo laborum deleniti!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quia corrupti neque
+                                officiis consequuntur ratione modi debitis, esse hic, sit officia aliquam nihil aperiam.
+                                Dolor autem quaerat illo laborum deleniti!</p>
                             <div class="icons"><i></i><i></i></div>
                         </div>
                     </article>
@@ -90,7 +309,9 @@
         <div class="content cnt2">
             <header>
                 <h2>content title</h2>
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod excepturi cupiditate voluptatibus sed? Esse aliquam quidem dolorum possimus, necessitatibus cumque odio debitis magni! Nobis ab dolore maxime. Facere, reprehenderit ullam.</h4>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod excepturi cupiditate voluptatibus sed?
+                    Esse aliquam quidem dolorum possimus, necessitatibus cumque odio debitis magni! Nobis ab dolore
+                    maxime. Facere, reprehenderit ullam.</h4>
             </header>
             <section>
                 <article>
@@ -98,7 +319,15 @@
                     <div class="texts">
                         <h3>segment title</h3>
                         <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
-                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto illum facere aut repudiandae fugit consequatur ducimus quis similique voluptates tempore. Est, delectus laboriosam. Id reprehenderit possimus rem, fuga iusto doloribus!</span><span>Repudiandae soluta eaque et quidem ratione officiis in iusto accusantium cumque explicabo, dolor totam quia quo optio cum laboriosam dolore? Officiis quis nemo quam ipsa reiciendis delectus tempora, placeat culpa!</span><span>Impedit in quas culpa corrupti amet placeat repellat, aliquid voluptas error, a mollitia, quo iure fuga ad. Error accusantium odio officiis voluptatibus amet, rerum soluta nesciunt! Odit dignissimos a reprehenderit!</span></p>
+                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto illum facere aut
+                                repudiandae fugit consequatur ducimus quis similique voluptates tempore. Est, delectus
+                                laboriosam. Id reprehenderit possimus rem, fuga iusto doloribus!</span><span>Repudiandae
+                                soluta eaque et quidem ratione officiis in iusto accusantium cumque explicabo, dolor
+                                totam quia quo optio cum laboriosam dolore? Officiis quis nemo quam ipsa reiciendis
+                                delectus tempora, placeat culpa!</span><span>Impedit in quas culpa corrupti amet placeat
+                                repellat, aliquid voluptas error, a mollitia, quo iure fuga ad. Error accusantium odio
+                                officiis voluptatibus amet, rerum soluta nesciunt! Odit dignissimos a
+                                reprehenderit!</span></p>
                         <button>button</button>
                     </div>
                 </article>
@@ -109,35 +338,45 @@
         <div class="content cnt3">
             <header>
                 <h2>content title</h2>
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid necessitatibus quos ullam inventore odit consequatur, vitae enim molestias iusto placeat recusandae eum nesciunt soluta obcaecati magnam debitis optio veritatis quasi.</h4>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid necessitatibus quos ullam inventore
+                    odit consequatur, vitae enim molestias iusto placeat recusandae eum nesciunt soluta obcaecati magnam
+                    debitis optio veritatis quasi.</h4>
             </header>
             <section>
                 <article>
                     <div class="image i1">이미지</div>
                     <div class="texts">
                         <h3>segment title</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptas corporis quaerat totam recusandae praesentium ullam, modi impedit nam consequatur vitae repudiandae unde quos vero animi sapiente incidunt laborum labore?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptas corporis quaerat
+                            totam recusandae praesentium ullam, modi impedit nam consequatur vitae repudiandae unde quos
+                            vero animi sapiente incidunt laborum labore?</p>
                     </div>
                 </article>
                 <article>
                     <div class="image i2">이미지</div>
                     <div class="texts">
-                         <h3>segment title</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptas corporis quaerat totam recusandae praesentium ullam, modi impedit nam consequatur vitae repudiandae unde quos vero animi sapiente incidunt laborum labore?</p>
+                        <h3>segment title</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptas corporis quaerat
+                            totam recusandae praesentium ullam, modi impedit nam consequatur vitae repudiandae unde quos
+                            vero animi sapiente incidunt laborum labore?</p>
                     </div>
                 </article>
                 <article>
                     <div class="image i3">이미지</div>
                     <div class="texts">
-                         <h3>segment title</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptas corporis quaerat totam recusandae praesentium ullam, modi impedit nam consequatur vitae repudiandae unde quos vero animi sapiente incidunt laborum labore?</p>
+                        <h3>segment title</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptas corporis quaerat
+                            totam recusandae praesentium ullam, modi impedit nam consequatur vitae repudiandae unde quos
+                            vero animi sapiente incidunt laborum labore?</p>
                     </div>
                 </article>
                 <article>
                     <div class="image i4">이미지</div>
                     <div class="texts">
-                         <h3>segment title</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptas corporis quaerat totam recusandae praesentium ullam, modi impedit nam consequatur vitae repudiandae unde quos vero animi sapiente incidunt laborum labore?</p>
+                        <h3>segment title</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptas corporis quaerat
+                            totam recusandae praesentium ullam, modi impedit nam consequatur vitae repudiandae unde quos
+                            vero animi sapiente incidunt laborum labore?</p>
                     </div>
                 </article>
             </section>
@@ -146,7 +385,9 @@
     <div class="ftr-wrap">
         <footer>
             <h4>logo here</h4>
-            <address>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor velit nisi quia eligendi minima dolores corrupti culpa nemo mollitia sed quis, harum tempora aspernatur temporibus vitae nesciunt earum! Optio, incidunt!</address>
+            <address>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor velit nisi quia eligendi minima
+                dolores corrupti culpa nemo mollitia sed quis, harum tempora aspernatur temporibus vitae nesciunt earum!
+                Optio, incidunt!</address>
             <div class="icons">
                 <i></i><i></i><i></i>
             </div>
