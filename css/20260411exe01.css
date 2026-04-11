@@ -1,24 +1,53 @@
 /* hdr-top */
 .hdr-top-wrap{}
-.hdr-top-wrap>.hdr-top{}
-.hdr-top-wrap>.hdr-top>i{}
+.hdr-top-wrap>.hdr-top{
+    width: 80%;
+    min-width: 1080px;
+    margin: 0 auto;
+}
+.hdr-top-wrap>.hdr-top>i{
+    line-height: 40px;
+}
 
 
 /* header 영역 */
 .hdr-wrap{}
-.hdr-wrap>header{}
+.hdr-wrap>header{
+    width: 80%;
+    min-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+}
 .hdr-wrap>header>h1{}
-.hdr-wrap>header>ul{}
+.hdr-wrap>header>ul{
+    display: flex;
+    column-gap: 20px;
+}
 .hdr-wrap>header>ul>li{}
 
 
 /* cnt-wrap 공통 */
-.cnt-wrap{}
-.cnt-wrap>.content{}
+.cnt-wrap{
+    margin-top: 80px;
+}
+.cnt-wrap>.content{
+    width: 80%;
+    min-width: 1080px;
+    margin: 0 auto;
+}
 .cnt-wrap>.content>header{}
-.cnt-wrap>.content>header>h2{}
-.cnt-wrap>.content>header>h4{}
-.cnt-wrap>.content>section{}
+.cnt-wrap>.content>header>h2{
+    line-height: 80px;
+}
+.cnt-wrap>.content>header>h4{
+    height: 40px;
+    line-height: 20px;
+}
+.cnt-wrap>.content>section{
+    margin-top: 40px;
+}
 
 
 /* cnt1 */
@@ -29,12 +58,22 @@
 .cnt1>section{}
 
 /* art-top */
-.art-top{}
+.art-top{
+    display: flex;
+    column-gap: 20px;
+}
 .art-top>article{}
-.art-top>article>.image{}
+.art-top>article>.image{
+    height: 320px;
+}
 .art-top>article>.image.i1{}
 .art-top>article>.image.i2{}
-.art-top>article>.texts{}
+.art-top>article>.texts{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: calc(100% / 6 * 0.5);
+    padding-right: calc(100% / 6 * 2);
+}
 .art-top>article>.texts>h3{}
 .art-top>article>.texts>h4{}
 .art-top>article>.texts>p{}
@@ -42,13 +81,21 @@
 .art-top>article>.texts>.icons>i{}
 
 /* art-btm */
-.art-btm{}
+.art-btm{
+    display: flex;
+    column-gap: 20px;
+    margin-top: 40px;
+}
 .art-btm>article{}
-.art-btm>article>.image{}
+.art-btm>article>.image{
+    height: 320px;
+}
 .art-btm>article>.image.i1{}
 .art-btm>article>.image.i2{}
 .art-btm>article>.image.i3{}
-.art-btm>article>.texts{}
+.art-btm>article>.texts{
+    padding: 40px 20px;
+}
 .art-btm>article>.texts>h3{}
 .art-btm>article>.texts>p{}
 .art-btm>article>.texts>.icons{}
@@ -61,14 +108,25 @@
 .cnt2{}
 .cnt2>header{}
 .cnt2>section{}
-.cnt2>section>article{}
-.cnt2>section>article>.image{}
-.cnt2>section>article>.texts{}
+.cnt2>section>article{
+    display: flex;
+}
+.cnt2>section>article>.image{
+    width: 50%;
+}
+.cnt2>section>article>.texts{
+    width: 50%;
+    padding: 80px calc(100% / 12);
+}
 .cnt2>section>article>.texts>h3{}
 .cnt2>section>article>.texts>h4{}
-.cnt2>section>article>.texts>p{}
+.cnt2>section>article>.texts>p{
+    margin-top: 20px;
+}
 .cnt2>section>article>.texts>p>span{}
-.cnt2>section>article>.texts>button{}
+.cnt2>section>article>.texts>button{
+    margin-top: 20px;
+}
 
 
 /* cnt3 */
@@ -76,21 +134,34 @@
 .cnt-wrap3>.content{}
 .cnt3{}
 .cnt3>header{}
-.cnt3>section{}
+.cnt3>section{
+    display: flex;
+    column-gap: 20px;
+}
 .cnt3>section>article{}
 .cnt3>section>article>.image{}
 .cnt3>section>article>.image.i1{}
 .cnt3>section>article>.image.i2{}
 .cnt3>section>article>.image.i3{}
 .cnt3>section>article>.image.i4{}
-.cnt3>section>article>.texts{}
+.cnt3>section>article>.texts{
+    padding: 40px 20px;
+}
 .cnt3>section>article>.texts>h3{}
 .cnt3>section>article>.texts>p{}
 
 
 /* footer */
-.ftr-wrap{}
-.ftr-wrap>footer{}
+.ftr-wrap{
+    margin-top: 80px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+.ftr-wrap>footer{
+    width: 80%;
+    min-width: 1080px;
+    margin: 0 auto;
+}
 .ftr-wrap>footer>h4{}
 .ftr-wrap>footer>address{}
 .ftr-wrap>footer>.icons{}
