@@ -1,0 +1,97 @@
+/* hdr-top */
+.hdr-top-wrap{}
+.hdr-top-wrap>.hdr-top{}
+.hdr-top-wrap>.hdr-top>i{}
+
+
+/* header 영역 */
+.hdr-wrap{}
+.hdr-wrap>header{}
+.hdr-wrap>header>h1{}
+.hdr-wrap>header>ul{}
+.hdr-wrap>header>ul>li{}
+
+
+/* cnt-wrap 공통 */
+.cnt-wrap{}
+.cnt-wrap>.content{}
+.cnt-wrap>.content>header{}
+.cnt-wrap>.content>header>h2{}
+.cnt-wrap>.content>header>h4{}
+.cnt-wrap>.content>section{}
+
+
+/* cnt1 */
+.cnt-wrap1{}
+.cnt-wrap1>.content{}
+.cnt1{}
+.cnt1>header{}
+.cnt1>section{}
+
+/* art-top */
+.art-top{}
+.art-top>article{}
+.art-top>article>.image{}
+.art-top>article>.image.i1{}
+.art-top>article>.image.i2{}
+.art-top>article>.texts{}
+.art-top>article>.texts>h3{}
+.art-top>article>.texts>h4{}
+.art-top>article>.texts>p{}
+.art-top>article>.texts>.icons{}
+.art-top>article>.texts>.icons>i{}
+
+/* art-btm */
+.art-btm{}
+.art-btm>article{}
+.art-btm>article>.image{}
+.art-btm>article>.image.i1{}
+.art-btm>article>.image.i2{}
+.art-btm>article>.image.i3{}
+.art-btm>article>.texts{}
+.art-btm>article>.texts>h3{}
+.art-btm>article>.texts>p{}
+.art-btm>article>.texts>.icons{}
+.art-btm>article>.texts>.icons>i{}
+
+
+/* cnt2 */
+.cnt-wrap2{}
+.cnt-wrap2>.content{}
+.cnt2{}
+.cnt2>header{}
+.cnt2>section{}
+.cnt2>section>article{}
+.cnt2>section>article>.image{}
+.cnt2>section>article>.texts{}
+.cnt2>section>article>.texts>h3{}
+.cnt2>section>article>.texts>h4{}
+.cnt2>section>article>.texts>p{}
+.cnt2>section>article>.texts>p>span{}
+.cnt2>section>article>.texts>button{}
+
+
+/* cnt3 */
+.cnt-wrap3{}
+.cnt-wrap3>.content{}
+.cnt3{}
+.cnt3>header{}
+.cnt3>section{}
+.cnt3>section>article{}
+.cnt3>section>article>.image{}
+.cnt3>section>article>.image.i1{}
+.cnt3>section>article>.image.i2{}
+.cnt3>section>article>.image.i3{}
+.cnt3>section>article>.image.i4{}
+.cnt3>section>article>.texts{}
+.cnt3>section>article>.texts>h3{}
+.cnt3>section>article>.texts>p{}
+
+
+/* footer */
+.ftr-wrap{}
+.ftr-wrap>footer{}
+.ftr-wrap>footer>h4{}
+.ftr-wrap>footer>address{}
+.ftr-wrap>footer>.icons{}
+.ftr-wrap>footer>.icons>i{}
