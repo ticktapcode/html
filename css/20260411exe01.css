@@ -11,7 +11,6 @@ body{
     width: 80%;
     max-width: 1080px;
     margin: 0 auto;
-    /* text-align: center; */
     background-image: url('../image/ball-1906468_640\ 1.png');
     background-repeat: repeat-x;
     
@@ -20,13 +19,15 @@ body{
     line-height: 40px;
     font-size: 35px;
     color: #fff;
-    animation: move 5s infinite linear;
+    /*  한번만 반복되는데, 썰매가 끝까지 갔다가 다시 천천히 앞으로 오게해보세요! */
+    animation: move 20s infinite linear;
 }
 
 
 /* header 영역 */
 .hdr-wrap{
     background-color: #a31f30;
+    animation: ani 10s 3;
 }
 .hdr-wrap>header{
     width: 80%;
@@ -211,19 +212,21 @@ body{
 }
 .cnt2>section>article>.image{
     width: 50%;
-    background-image: url('../image/sonyuser-hochybrig-4683994_640.jpg');
-    
+    background-image: url('../image/yamabon-deer-7124972_640.jpg');
 }
 .cnt2>section>article>.image>input{
     display: none;
 }
 .cnt2>section>article>.image>input:checked+video{
-    display: none;
+   opacity: 0;
 }
+
 
 .cnt2>section>article>.image>video{
     height: 100%;
     object-fit: cover;
+    opacity: 1;
+    transition: opacity 0.5s;
 }
 .cnt2>section>article>.texts{
     width: 50%;
@@ -242,13 +245,16 @@ body{
     width: calc(100% / 6 * 4);
     margin-top: 20px;
     font-size: 24px;
-    background-color: #212517;
+    background-color: #f3ff12;
     color: #fff;
     text-transform:  uppercase;
     border-radius: 20px;
     cursor: pointer;
 }
 
+.cnt2>section>article>.texts>button:hover{
+    animation: ani 0.5s infinite;
+}
 
 /* cnt3 */
 .cnt-wrap3{}
@@ -428,21 +434,32 @@ body{
     }
 }
 
-@keyframes move {
+@keyframes ani {
+  0% {
+    /* 0퍼센트시점일때 적용될 css !  */
+    background-color: #f3ff12;
+  }
+  50% {
+    /* 50%퍼센트시점일때 적용될 css !  */
+    background-color: #00ffc3;
+  }
+  88% {
+    /* 100% 퍼센트시점일때 적용될 css !  */
+    background-color: #ff00b3;
+  }
+  100%{
+    background-color: #f3ff12;
+  }
+}
+
+@keyframes move{
     0%{
         margin-left: 0%;
     }
-    25%{
-        margin-left: 50%;
-
-    }
     50%{
-        margin-left: calc(100% - 40px);
-    }
-    75%{
-        margin-left: 50%;
+        margin-left: calc(100% - 45px);
     }
     100%{
         margin-left: 0%;
-    }    
+    }
 }
