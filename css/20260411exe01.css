@@ -11,7 +11,7 @@ body{
     width: 80%;
     max-width: 1080px;
     margin: 0 auto;
-    text-align: center;
+    /* text-align: center; */
     background-image: url('../image/ball-1906468_640\ 1.png');
     background-repeat: repeat-x;
     
@@ -20,6 +20,7 @@ body{
     line-height: 40px;
     font-size: 35px;
     color: #fff;
+    animation: move 5s infinite linear;
 }
 
 
@@ -48,6 +49,9 @@ body{
     font-size: 20px;
 }
 .hdr-wrap>header>ul>li{}
+.hdr-wrap>header>ul>li:nth-of-type(4){
+    display: none;
+}
 
 
 /* cnt-wrap 공통 */
@@ -207,7 +211,16 @@ body{
 }
 .cnt2>section>article>.image{
     width: 50%;
+    background-image: url('../image/sonyuser-hochybrig-4683994_640.jpg');
+    
 }
+.cnt2>section>article>.image>input{
+    display: none;
+}
+.cnt2>section>article>.image>input:checked+video{
+    display: none;
+}
+
 .cnt2>section>article>.image>video{
     height: 100%;
     object-fit: cover;
@@ -310,3 +323,126 @@ body{
     font-size: 40px;
 }
 .ftr-wrap>footer>.icons>i{}
+
+@media screen and (max-width: 1024px) {
+    /* 이 안에 값들이 가로사이즈 1024px 이하일때 적용 */
+    .art-top>article:nth-of-type(2){
+        display: none;
+    }
+    .art-btm>article:nth-of-type(3){
+        display: none;
+    }
+    .cnt2>section>article>.texts{
+        display: none;
+    }
+    .cnt2>section>article>.image{
+        width: 100%;
+        height: 500px;
+    }
+    .cnt3>header{
+        display: none;
+    }
+    .cnt3>section>article:nth-of-type(3){
+        display: none;
+    }
+    .cnt3>section>article:nth-of-type(4){
+        display: none;
+    }
+    .hdr-top-wrap>.hdr-top{
+        max-width: 610px;
+    }
+    .hdr-wrap>header{
+        max-width: 610px;
+    }
+    .cnt-wrap>.content{
+        max-width: 610px;
+    }
+    .ftr-wrap>footer{
+        max-width: 610px;
+    }
+
+    .cnt-wrap2>.content{
+        width: 100%;
+        max-width: none;
+    }
+    .cnt-wrap>.content.cnt2>section{
+        max-width: 610px;
+    }
+    .cnt2>header>h4{
+        max-width: 610px;
+    }
+    .cnt-wrap>.content>header>h4{
+        width: 100%;   
+    }
+    .cnt-wrap{
+        margin-top: 40px;
+    }
+    .art-btm{
+        margin-top: 0;
+    }
+    .cnt-wrap3{
+        margin-top: 80px;
+    }
+    .cnt2>header{
+        padding-bottom: 320px;
+    }
+    .cnt-wrap>.content.cnt2>section{
+        margin-top: -280px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .art-btm{
+        display: none;
+    }
+    .art-top>article:nth-of-type(2){
+        display: block;
+        margin-top: 20px;
+    }
+    .art-top>article>.texts{
+        display: none;
+    }
+    .art-top{
+        display: block;
+    }
+    .cnt-wrap>.content.cnt2>section{
+        margin-top: 0; 
+    }
+    .cnt2>header{
+        padding-bottom: 80px;
+    }
+    .cnt2>section>article>.image{
+        height: 240px;
+    }
+    .cnt-wrap>.content{
+        width: 90%;
+    }
+    .cnt-wrap>.content.cnt2>section{
+        width: 100%;
+    }
+    .hdr-wrap>header>ul>li{
+        display: none;
+    }
+    .hdr-wrap>header>ul>li:nth-of-type(4){
+        display: block;
+    }
+}
+
+@keyframes move {
+    0%{
+        margin-left: 0%;
+    }
+    25%{
+        margin-left: 50%;
+
+    }
+    50%{
+        margin-left: calc(100% - 40px);
+    }
+    75%{
+        margin-left: 50%;
+    }
+    100%{
+        margin-left: 0%;
+    }    
+}
